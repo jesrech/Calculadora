@@ -1,22 +1,16 @@
 @charset "UTF-8";
 
-/*
-#c5ebd6
-#83e1ad
-#3ddc84
-#2fa866
-#1a5c37
-#063d1e
-*/
+
 
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
-    --cor3: #2fa866;
+    --cor3: #3d7d56;
     --cor4: #1a5c37;
-    --cor5: rgb(6, 61, 30);
-    --cor6: #000000;
+    --cor5: #105530;
+    --cor6: #063d1e;
+    --cor7: #00525a;
     
 }
 
@@ -24,11 +18,11 @@
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
-
 .fundo {
-    background-image: linear-gradient(45deg, var(--cor6), var(--cor4));
+    background-image: linear-gradient(45deg, var(--cor4), var(--cor3), var(--cor7));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,9 +31,10 @@
 }
 
 .calculadora {
-    background-color: rgb(6, 61, 30, 0.8);
+    background-image: linear-gradient(180deg, var(--cor4), var(--cor5));
     border-radius: 15px;
     padding: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
 }
 
 button {
@@ -51,10 +46,13 @@ button {
     background-color: var(--cor4);
     border: none;
     color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
+  
 }
 
 button:hover {
-    background-color: var(--cor5);
+    background-color: var(--cor6);
 }
 
 #resultado {
@@ -65,4 +63,6 @@ button:hover {
     font-size: 25px;
     text-align: right;
     padding: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
 }
